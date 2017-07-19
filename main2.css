@@ -1,0 +1,104 @@
+.navbar-brand{
+	font-family: 'Aclonica';
+}
+#row{
+	padding: 90px;
+}
+.img-text {
+  text-align: center;
+  
+}
+.img-border {
+    border: 1px solid #ccc;
+}
+
+.img-border:hover {
+    border: 1px solid #777;
+}
+
+.img-border img {
+    width: 100%;
+    height: 200px;
+}
+
+.img-title {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Gabriela';
+    background-color: #211919;
+    font-size: 20px;
+}
+.img-title a{
+	color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img-row {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    position: relative;
+}
+
+@media only screen and (max-width: 700px){
+    .img-row {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .img-row {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+	background-image: url("img/back2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-position: center;
+
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.img-row:hover .image {
+  opacity: 0.3;
+}
+.img-row:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  font-family: 'Alegreya';
+}
+.text a{
+	color: white;
+	text-decoration: none;
+}
