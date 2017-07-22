@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Acoustic</title><link rel="icon" type="image/png" href="img/logo.jpg" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">		<!-- External bootstrap CDN link -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><!-- External bootstrap CDN link -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"><!--CSS library files for stlying of datatable-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"><!--CSS library files for stlying of datatable-->
     <link rel="stylesheet" type="text/css" href="font-awesome.css">
     <link rel="stylesheet" type="text/css" href="main3.css">
     <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>		<!-- external font -->
@@ -18,12 +18,12 @@
     <div class="wrapper">
         <div class="main">
             <header>
-            	<nav class="navbar navbar-inverse navbar-fixed-top">
+            	<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar show titles and mood list on dropdown -->
 			  		<div class="container-fluid">
 			  			<div class="navbar-header">
 			    			<img src="img/logo.jpg" height="50px" width="50px" align="left" class="img-responsive" style="border-radius: 50px; padding: 5px; "><a class="navbar-brand" href="#" style="padding-left: 30px; ">The Ambiance-Mood based Music</a>
 				    	</div>		<!-- navbar header -->
-				    	<ul class="nav navbar-nav navbar-right">
+				    	<ul class="nav navbar-nav navbar-right"> 	<!--data at right side -->
 					    	<li class="active"><a href="index.html">Home</a></li>
 					    	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose your mood<span class="caret"></span></a>
 						    	<ul class="dropdown-menu">
@@ -40,9 +40,9 @@
 					</div>		<!-- container-fluid -->
 				</nav>
             </header>
-            <section class="content">
+            <section class="content">  <!-- displays music content -->
 	            <audio></audio>
-	            <table id="songs">
+	            <table id="songs">	<!-- Songs names,artist,album and duration -->
 				    <thead class="list-headers">
 				        <tr>
 				            <td> Title </td>
@@ -90,15 +90,14 @@
 				            </tr>
    					 </tbody>
    				</table>
-		        <div class="current-song-wrapper">
+		        <div class="current-song-wrapper"> <!-- to show current song details -->
 		        	<img src="img/song1.jpg" class="current-song-image">
 		        	<div>
 		        		<p class="current-song-name">Tamma Tamma Again</p>
 		        		<p class="current-song-album">Badrinath ki Dulhania</p>
 		        	</div>
 	        </section>
-            <!-- <footer> -->
-                <div class="controls">
+	        	<div class="controls"> 	<!--  Audio controls -->
                     <div class="player-buttons">
                     	<i class="fa fa-random clickable disabled" aria-hidden="true"></i>
                     	<i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
@@ -117,17 +116,16 @@
                         <span class="song-duration"></span>
                     </div>		<!-- player-buttons -->
                 </div>		<!-- controls -->
-            <!-- </footer> -->
-        </div>
-    </div>
+        </div> 	<!-- main -->
+    </div>		<!-- wrapper -->
     <script src="jquery.js"></script>
-    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script> <!-- datatables JS -->
  	<script src="acoustic.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
     <!-- datatables bootstrap compatibility cdn links -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script> 
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script> 
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- CDN for datatable-bootstrap Compatibility -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script> <!-- CDN for datatable-bootstrap Compatibility -->
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script><!-- CDN for datatable-bootstrap Compatibility -->
 
 </body>
 

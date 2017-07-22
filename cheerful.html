@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>Cheerful</title><link rel="icon" type="image/png" href="img/logo.jpg" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">		<!-- External bootstrap CDN link -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"><!--CSS library files for stlying of datatable-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"><!--CSS library files for stlying of datatable-->
     <link rel="stylesheet" type="text/css" href="font-awesome.css">
     <link rel="stylesheet" type="text/css" href="main3.css">
     <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>		<!-- external font -->
@@ -18,12 +19,12 @@
     <div class="wrapper">
         <div class="main">
             <header>
-            	<nav class="navbar navbar-inverse navbar-fixed-top">
+            	<nav class="navbar navbar-inverse navbar-fixed-top">  <!-- navbar show titles and mood list on dropdown -->
 			  		<div class="container-fluid">
 			  			<div class="navbar-header">
 			    			<img src="img/logo.jpg" height="50px" width="50px" align="left" class="img-responsive" style="border-radius: 50px; padding: 5px; "><a class="navbar-brand" href="#" style="padding-left: 30px; ">The Ambiance-Mood based Music</a>
 				    	</div>		<!-- navbar header -->
-				    	<ul class="nav navbar-nav navbar-right">
+				    	<ul class="nav navbar-nav navbar-right"> <!--data at right side -->
 					    	<li class="active"><a href="index.html">Home</a></li>
 					    	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose your mood<span class="caret"></span></a>
 						    	<ul class="dropdown-menu">
@@ -40,10 +41,10 @@
 					</div>		<!-- container-fluid -->
 				</nav>
             </header>
-            <section class="content">
+            <section class="content"> <!-- Song Content display -->
 	            <audio></audio>
 	            <table id="songs">
-				    <thead class="list-headers">
+				    <thead class="list-headers">  <!-- list headings -->
 				        <tr>
 				            <td> Title </td>
 				            <td> Artist </td>
@@ -84,7 +85,7 @@
 				            </tr>
 				     </tbody>
    				</table>
-		        <div class="current-song-wrapper">
+		        <div class="current-song-wrapper"> <!-- SOng name,img,album while palying -->
 		        	<img src="img/song1.jpg" class="current-song-image">
 		        	<div>
 		        		<p class="current-song-name">Tamma Tamma Again</p>
@@ -92,7 +93,7 @@
 		        	</div>
 	        </section>
             <!-- <footer> -->
-                <div class="controls">
+                <div class="controls"> <!-- audio controls -->
                     <div class="player-buttons">
                     	<i class="fa fa-random clickable disabled" aria-hidden="true"></i>
                     	<i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
